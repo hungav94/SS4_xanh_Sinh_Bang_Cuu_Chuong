@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh Bảng Cửu Chương</title>
+</head>
+<body>
+<script>
+    let num1, num2, sout;
+    sout = '<table border="1px">';
+    num1 = 1;
+    num2 = 2;
+    while (num1 < 10) {
+        sout += '<tr>';
+        while (num2 < 10) {
+            sout += '<td width="100px">' + num2 + ' * ' + num1 + ' = ' + num1 * num2 + '</td>';
+            num2++;
+        }
+        sout += '</tr>';
+        num2 = 2;
+        num1++;
+    }
+    document.write(sout);
+</script>
+</body>
+</html>
